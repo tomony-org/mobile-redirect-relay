@@ -1,0 +1,7 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<script>
+  // 受け取ったクエリ（?code=...&state=...）をそのままアプリに中継
+  const q = location.search || "";
+  location.replace("your.app://auth" + q);
+</script>
